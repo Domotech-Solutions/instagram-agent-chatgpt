@@ -32,9 +32,10 @@ automatic detection; preserve regional vocabulary from `voice.md`.
 
 ## Before you write
 
-1. Read `.instagram-agent/voice.md` if it exists. That is the user's voice
-   profile: how they talk on camera, what they never say, who they are talking
-   to. If it does not exist, ask for **three of their own reels**, transcribe or
+1. Read the first available `voice.md` using the precedence in
+   `workspace-state.md`. That is the user's voice profile: how they talk on
+   camera, what they never say, who they are talking to. If it does not exist,
+   ask for **three of their own reels**, transcribe or
    read them and infer the voice. Show the profile before saving it; save only
    with the user's approval. A script in the wrong voice is unusable, because
    they have to say it out loud.

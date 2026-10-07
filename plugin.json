@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "instagram-agent-chatgpt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fourteen ChatGPT and Codex skills for planning, writing, reviewing, and improving Instagram content without automatic posting or scraping.",
   "author": {
     "name": "Domotech Solutions",

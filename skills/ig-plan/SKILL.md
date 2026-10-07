@@ -17,8 +17,8 @@ executed. Run it once a week, on the same day.
 
 ## Input
 
-If `.instagram-agent/voice.md`, `.instagram-agent/swipe.md` and
-`.instagram-agent/log.md` exist, read them.
+Read `voice.md` using the precedence in `workspace-state.md`. If
+`.instagram-agent/swipe.md` and `.instagram-agent/log.md` exist, read them.
 The swipe file is the user's own evidence from `$ig-viral` about which formulas
 are landing in their niche right now, and it outranks anything in this file.
 The log stops the plan repeating a theme from the last fortnight.

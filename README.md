@@ -27,7 +27,15 @@ ChatGPT and Codex can select these skills automatically. They can also be invoke
 
 ## Installation
 
-Install the repository as a local plugin or add it through a compatible plugin marketplace. The root `plugin.json` follows the portable Agent Plugins format. After installation, run `$instagram-setup`.
+Add the GitHub repository as a marketplace and install the plugin:
+
+```bash
+codex plugin marketplace add Domotech-Solutions/instagram-agent-chatgpt
+codex plugin add instagram-agent-chatgpt@domotech-instagram
+```
+
+Restart the ChatGPT desktop app after installation. The root `plugin.json`
+follows the portable Agent Plugins format.
 
 The six included Python tools use only the Python 3 standard library. Optional workflows may use:
 
@@ -39,7 +47,8 @@ These optional tools are not installed or invoked without the user's knowledge.
 
 ## Local state
 
-When a writable workspace exists, generated working state lives in `.instagram-agent/`:
+Personal defaults live in `~/.codex/instagram-agent/`. A project can override
+them with `.instagram-agent/` in its active workspace:
 
 ```text
 .instagram-agent/
@@ -51,6 +60,9 @@ When a writable workspace exists, generated working state lives in `.instagram-a
 ```
 
 If the environment has no persistent filesystem, the skills ask the user to attach or paste the relevant material and return the updated content in chat.
+
+Personal profiles are never bundled into the plugin or committed to this
+repository.
 
 ## Safety boundary
 

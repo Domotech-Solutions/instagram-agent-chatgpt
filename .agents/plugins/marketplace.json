@@ -1,0 +1,21 @@
+{
+  "name": "domotech-instagram",
+  "interface": {
+    "displayName": "Domotech Instagram"
+  },
+  "plugins": [
+    {
+      "name": "instagram-agent-chatgpt",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Domotech-Solutions/instagram-agent-chatgpt.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
