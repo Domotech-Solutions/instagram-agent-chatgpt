@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "instagram-agent-chatgpt",
+  "version": "1.0.0",
+  "description": "Fourteen ChatGPT and Codex skills for planning, writing, reviewing, and improving Instagram content without automatic posting or scraping.",
+  "author": {
+    "name": "Domotech Solutions",
+    "url": "https://github.com/Domotech-Solutions"
+  },
+  "homepage": "https://github.com/Domotech-Solutions/instagram-agent-chatgpt",
+  "repository": "https://github.com/Domotech-Solutions/instagram-agent-chatgpt",
+  "license": "MIT",
+  "keywords": ["instagram", "chatgpt", "codex", "content", "marketing"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/instagram-setup/SKILL.md",
+      "interface": {
+        "displayName": "Instagram Agent for ChatGPT",
+        "shortDescription": "Plan and write Instagram content safely",
+        "longDescription": "A bilingual set of Instagram workflows for Reels, captions, carousels, Stories, profiles, planning, engagement, analytics, and voice editing. It drafts and analyzes; it never publishes or sends messages automatically.",
+        "developerName": "Domotech Solutions",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://github.com/Domotech-Solutions/instagram-agent-chatgpt",
+        "defaultPrompt": [
+          "Set up my Instagram voice profile.",
+          "Turn this idea into an Instagram Reel.",
+          "Audit these Instagram insights."
+        ]
+      }
+    }
+  }
+}
